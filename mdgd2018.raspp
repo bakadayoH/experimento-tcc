@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rasppmde:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rasppmde="http://prisma.cos.ufrj.br/rasppmde/2.0" xmlns:uml="http://prisma.cos.ufrj.br/ras/umlit/1.0" id="x2YCBJ0wY9Sd1NI24oPXlpd72" body="https://www.overleaf.com/project/5bc61710123bfb1f5aeed1ad" name="Análise da Transferência de Tecnologia para MDGD na Indústria (SBSI)" repositoryRole="KB">
+  <ownedElements xsi:type="uml:Package" id="Fa4FOK3vqvNgR9QwPs3o2VSMx" name="types">
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="aPF63qL3RCpK59shvw3hVn3Mt" name="EMF 2.4" exporter="Ecore" exporterVersion="2.4" type="XMI" version="2.0"/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="hSe0X7kFDb567Gq54V1vsv8Wt" name="Eclipse Sirius 8.1.1" exporter="Eclipse Sirius" exporterVersion="8.1.1" type="XMI" version="2.0"/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="o9HMIu9Q6S8hMU3wp0YQ5eB6a" name="RMP" exporter="Rational Modelling Platform" exporterVersion="7.0.0" type="XMI" version=""/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="o9HMIu9Q6S8hMU3wp0YQ5eB6a" body="http://www.omg.org/spec/XMI/20110701" name="OMG/MOF" exporter="OMG's MOF Exporter" exporterVersion="4.0.0" type="XMI" version="2.1"/>
+    <ownedElements xsi:type="rasppmde:MetaType" id="Pd6xq3M21Vt72gR4UTOcTe0Es" name="Java 6">
+      <conformsTo xsi:type="rasppmde:Metamodel" href="../remoddrepo-classification.raspp#//@artifacts.5"/>
+    </ownedElements>
+    <ownedElements xsi:type="rasppmde:MetaType" id="o9HMIu9Q6S8hMU3wp0YQ5eB6a" name="UML2">
+      <conformsTo xsi:type="rasppmde:Metamodel" href="../remoddrepo-classification.raspp#//@artifacts.3/@artifacts.0/@artifacts.0"/>
+    </ownedElements>
+    <ownedElements xsi:type="rasppmde:MetaType" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="fUML">
+      <conformsTo xsi:type="rasppmde:Metamodel" href="../remoddrepo-classification.raspp#//@artifacts.3/@artifacts.0/@artifacts.0"/>
+    </ownedElements>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="File" exporter="Custom Exporter" exporterVersion="1.0" type="XML"/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="OCL-XMI" exporter="OCL-XMI Ecore" exporterVersion="1.1.0" type="XMI"/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="EMX" exporter="IBM EMX XTools Exporter" exporterVersion="7.0.0" type="XMI"/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="MDL" exporter="MathWorks Simulink Model" exporterVersion="7.11.1" type="PLAIN_TEXT">
+      <comments id="c58K667eTmNj6Sy12F8qoJ6Gx" body="Until 2011"/>
+    </ownedElements>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="SLX" exporter="MathWorks Simulink Model " exporterVersion="9.0" type="XML">
+      <comments id="c58K667eTmNj6Sy12F8qoJ6Gx" body="After 2011"/>
+    </ownedElements>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="MathML" exporter="MathML Exporter" exporterVersion="1.0" type="XML" version="1"/>
+    <ownedElements xsi:type="rasppmde:SerializationLanguage" id="c58K667eTmNj6Sy12F8qoJ6Gx" name="MATLAB Func Exp" exporter="MATLAB Function Exporter" exporterVersion="9" type="PLAIN_TEXT" version="9"/>
+    <ownedElements xsi:type="rasppmde:MetaType" id="s5d4T262b9w9kA06UeiK8EueM" name="XML Parse (jMonkeyEngine)"/>
+  </ownedElements>
+  <resourceTypes id="ap93KCh260h9C542dk8u65i6x" name="ZIP"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Metamodel"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Model"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="PDF"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Folder"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Publication"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Image"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Project Webpage"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Spreadsheet"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="OCL Script"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Ecore Diagram"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="README"/>
+  <resourceTypes id="h8Yfs38V5hDuR3Ag1V51VV9y9" name="Document"/>
+  <resourceTypes id="HlvUC0Yt6Ctw8OplEArTA299Y" name="MATLAB code (function, script, or class)"/>
+  <assets xsi:type="rasppmde:ReusableAsset" id="1fJmoep2bR9PKen31rOSIck84" name="S01 - The Effectiveness and Efficiency of Model Driven Game Design">
+    <classification id="7j444NftAGRp3RAxtorSH4Kq7">
+      <descriptorGroup id="Ap6j08MWUr4HS46bk28bg1t73" name="Publication type">
+        <freeeFormValue id="W15MmLqPkxd91GGM1KnjLL495" name="Position paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="F5929ee9b7wg06BU6pF8ly312" name="Artifact Development Contexts">
+        <freeeFormValue id="4tukiNrF73M010S2Yk657lkrc" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="S9P8Rct5LNW60SYwxOxyyyK7c" name="System/Software Domains">
+        <freeeFormValue id="FueKP1Y6sLA69Y6BjSHf9m8bi" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="5oeic3F54O8ygj50Xxn103jtY" name="Lifecycle Phases">
+        <freeeFormValue id="8rY5K5qJdO37pMOv5s77TBk5h" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="3eUvt30Vl1YuhXCU4vwF52yU1" name="Modeling Languages/Notations">
+        <freeeFormValue id="8fqI82towF8XLhucND9OaY4f2" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="4CHhjdVXieaU3H0u1l612vtH5" name="Artifact Types">
+        <freeeFormValue id="q5I099B4HQ0OXulLk32Nd2I4W" name="NONE"/>
+      </descriptorGroup>
+      <descriptorGroup id="FE8E9RVQ8Yhs5rN8TURt8L8ej" name="Required Tool">
+        <freeeFormValue id="15s6C3N12CCdmTJ55u2KU0Wcn" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="qb86hBFy1iubCCVhp1S8b33tq" name="Genre">
+        <freeeFormValue id="wrjlYHt7B5b1DE4ePH5g6do4n" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="bhPJT7E7Q4I9SN84HwJWqptuq" name="Application Context">
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Methodology Type">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Research Methodology">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Study Classification">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Software Process">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Benefits">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Drawbacks">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Technologies">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Confounding Factors">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Prototypes">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Open Questions">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE" value=""/>
+        </contained>
+        <contained id="rHwJdY1fiXMgpRKrOX30BmWb0" name="Lessons">
+          <freeeFormValue id="rHwJdY1fiXMgpRKrOX30BmWb0" name="NONE"/>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="Mu7BpB02xgDr3AAyLM6Et3WGc" name="Research Group">
+        <comments id="tmWV697l3J4VYAk6lyHo4SN5Y" body="Joris Dormans"/>
+        <freeeFormValue id="hXUx6a7BM9374x90A97UGm7Ip" name="Group 1"/>
+      </descriptorGroup>
+    </classification>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="M9V8J0s3XeF5iS1l8cXO2d9Mr" name="S02 - Integrating Usability Evaluation into Model-Driven Video Game Development">
+    <classification id="5suTnHVHdBYo7S7S1UnJPDa0A">
+      <descriptorGroup id="5Y5CLt8lY6yWPb11fQ4023P57" name="Publication type">
+        <freeeFormValue id="P5MOaIynUVGDF8O90Mh8gd0Wj" name="Technical paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="5Y5CLt8lY6yWPb11fQ4023P57" name="Artifact Development Contexts">
+        <freeeFormValue id="5Y5CLt8lY6yWPb11fQ4023P57" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="5Y5CLt8lY6yWPb11fQ4023P57" name="System/Software Domains">
+        <freeeFormValue id="5Y5CLt8lY6yWPb11fQ4023P57" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="1E4rB47R68yQ4J3K12NtWEsCn" name="Lifecycle Phases">
+        <freeeFormValue id="9na775q5HLVEB91OWkyF67lsY" name="Earlie Usability Inspection"/>
+      </descriptorGroup>
+      <descriptorGroup id="5Y5CLt8lY6yWPb11fQ4023P57" name="Modeling Languages/Notations">
+        <freeeFormValue id="ncA72x0A2MuD36QMfS5dovmr8" name="Video Game Usability Model"/>
+      </descriptorGroup>
+      <descriptorGroup id="7pFl9G3YB06GR7914ap9sX0Bc" name="Artifact Types">
+        <freeeFormValue id="3Rh11Wx1722QYuRcDEX4Lvb3b" name="ISO"/>
+      </descriptorGroup>
+      <descriptorGroup id="BRn3MvcM5s7Y0d2AlG51X8B3D" name="Required Tool">
+        <freeeFormValue id="Xn4L66eOjJ1MiIG5FtRibbRnQ" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="9U8U34459pCcGKsm5EJP1XYOV" name="Genre">
+        <freeeFormValue id="5Y5CLt8lY6yWPb11fQ4023P57" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="Ca58oiT13ShHqw5HPoQUvUl5I" name="Application Context">
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Methodology Type">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Research Methodology">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Study Classification">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Software Process">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Benefits">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Drawbacks">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Technologies">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Confounding Factors">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Prototypes">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Open Questions">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE" value=""/>
+        </contained>
+        <contained id="2xxFWt002rGim0O18qR06T9CD" name="Lessons">
+          <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="69kSt7W7XoO66AJk05l9sKA8m" name="Research Group">
+        <comments id="e9g8c09ib0hjpukf61Nu59xk0" body="Adrian Fernandez, Emilio Insfran, Silvia Abrahão, José Ángel Carsí and Emanuel Montero "/>
+        <freeeFormValue id="8T0KPg6wI5dwf3sXm60PJ5m1m" name="Group 2"/>
+      </descriptorGroup>
+    </classification>
+    <solution id="C0EDciw0Dpte3b3596P3OX6vP">
+      <artifact id="407eIJEe2uriIwAgw3rp4MHJP" body="ISO/IEC 25010: Systems and software engineering, Systems and software Quality Requirements and Evaluation (SQuaRE), System and software quality models (2011)  " name="ISO/IEC 25010 SQUARE Standard">
+        <downloadInfo id="WLJamnH38MV8D5UkY3g5dVnL0" pkgKind="REFERENCE_TO_URL">
+          <location id="Mg8D4RN4H6fOa3Fd7rOb39Y6g" pathKind="URL" path="https://www.iso.org/standard/35733.html"/>
+        </downloadInfo>
+      </artifact>
+    </solution>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="GiYM5wRun583RKn1hA04us709" name="S03 - A Flexible Model-Driven Game Development Approach" license="//@licenses.0">
+    <classification id="KB4lf4rpM4tEVUly1Qc9298aC">
+      <descriptorGroup id="59945dMk7xek2414Cv2q4HN63" name="Publication type">
+        <freeeFormValue id="1Lq80468VtaORB15C2co35e1K" name="Toolchain paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="t2Xk4fF8W7JSU02uuD8qk1P22" name="Artifact Development Contexts">
+        <freeeFormValue id="fK506P7r2PEuJVt1NvcT08wKc" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="t2Xk4fF8W7JSU02uuD8qk1P22" name="System/Software Domains">
+        <freeeFormValue id="A4bKXkSFKb3b50QJO9dJh5ew9" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="t2Xk4fF8W7JSU02uuD8qk1P22" name="Lifecycle Phases">
+        <freeeFormValue id="jvI7GYeLBNAtcX8mg9lWc63E6" name="Development"/>
+      </descriptorGroup>
+      <descriptorGroup id="K39fxO5kTxyBvkdtnL1tx6Tf0" name="Modeling Languages/Notations">
+        <description id="J7Jt0MCKOGCNg7iQau8qth7Ty" name="using domain-specific languages to create XML-based models and automatic Java-based transformations that generate code"/>
+        <freeeFormValue id="0Y1a5302n5k6872T50RC89Bup" name="jMonkeyEngine IDE"/>
+      </descriptorGroup>
+      <descriptorGroup id="S3O420pdi856kwoNi25T1B95X" name="Artifact Types">
+        <freeeFormValue id="4tK5f3jrCVWdFXlpCkAdmhfjm" name="XML"/>
+        <freeeFormValue id="86ww829J820YP77L4e1by2v9Q" name="UML Profile"/>
+        <freeeFormValue id="47eX87JsoQ6o35xhmxYId9fno" name="Java model transformations"/>
+      </descriptorGroup>
+      <descriptorGroup id="TNvWuj9GFJN4C5OwxB0v7Qfvr" name="Required Tool">
+        <freeeFormValue id="5VMW8jgoKkcvWMyv64Js6P91K" name="jMonkeyEngine"/>
+      </descriptorGroup>
+      <descriptorGroup id="83IBmrBY5gtYUFFc8QRMippXt" name="Genre">
+        <freeeFormValue id="R8Ug0tuumDppL43eHrgh72Ejo" name="Multiple"/>
+        <contained id="M839G7l9bqA1I4Qp10UYVRbJf" name="Cases">
+          <freeeFormValue id="qG4U22oYB07MT5cM9MW4vxP5f" name="GTA (Grand Theft Auto)"/>
+          <freeeFormValue id="P7KTxM4f5YHD19W6XJw7Suc8x" name="Racing"/>
+          <freeeFormValue id="k3v01xK4u51nXEChcQRJ1nBF6" name="FPS (First-Person Shooter)"/>
+          <freeeFormValue id="xnrdUoknBowmPI5dw4SroPfS5" name="Scenario"/>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="m0hDlj9x6vCpABeu7iJy3gp98" name="Application Context">
+        <contained id="6ldDU0p9q4u7JJs5VmEV6u0f9" name="Application Context">
+          <freeeFormValue id="NXMbuUa4e5F2DGmr8l6BwshnB" name="realDevScenario" value="false"/>
+          <contained id="sHHNMiKlT7e775Jr0O4t6UF1D" name="Methodology Type">
+            <freeeFormValue id="d8anx53bs3fpVuV6r8H7FrN2a" name="PROOF_OF_CONCEPT"/>
+          </contained>
+          <contained id="gbqWoe6671R19mqm97fpA0C97" name="Research Methodology">
+            <freeeFormValue id="7Fp9L71AN48J3iLOVV6hHg7yG" name="NONE"/>
+          </contained>
+          <contained id="T90niXlvA78q51ad66GokNtD9" name="Study Classification">
+            <freeeFormValue id="yPLDQQI97TOeuje8NNW284kJR" name="NONE"/>
+          </contained>
+          <contained id="B8YJ1IXyEdQBB1C4M1CPX2m69" name="Software Process">
+            <freeeFormValue id="y2QRQ1a2mN970147R89M7gKvV" name="NONE"/>
+          </contained>
+          <contained id="1DQi513g5lQ17mB4oNe0chy05" name="Benefits">
+            <freeeFormValue id="8E9Dw49wOet9PGW636M9tIg0k" name="NONE"/>
+          </contained>
+          <contained id="0R51AeRDvdIN2gL6FPtBWpN21" name="Drawbacks">
+            <freeeFormValue id="QP1CHvWJi3CrF4UqWQnolR1aI" name="NONE"/>
+          </contained>
+          <contained id="45q0j0trQQ1KDV6vG971428uC" name="Technologies">
+            <freeeFormValue id="lnvYuw8JKb60MfSdpbmCyyp55" name="jMonkeyEngine"/>
+          </contained>
+          <contained id="49dCA4GMj6y7EuO7bR4kc1lsD" name="Confounding Factors">
+            <freeeFormValue id="UyWhCE0lrbQfF029d1lRjVG8Y" name="NONE"/>
+          </contained>
+          <contained id="tKu1rGrV6B12Sjto3utwP1GFV" name="Prototypes">
+            <freeeFormValue id="30CbrWH56yQ77a2J9COYi1aR8" name="Case 1 - prototype for humanoid walking on a scenario"/>
+            <freeeFormValue id="F43I1Tc1suOLIGe5O3ULAG935" name="Case 2 - prototype exploring ﬁrst-person character interaction"/>
+            <freeeFormValue id="cQomn9K0mSKjkEpKITDiO4SNp" name="Case 3 - prototype where the player character is a vehicle and the scenario contains"/>
+            <freeeFormValue id="eNNbpAvtqxRkJ1am6hG2wB701" name="Case 4 - prototype inspired by the GTA"/>
+          </contained>
+          <contained id="sx07jDv170mdLR6id5gU95y49" name="Lessons">
+            <freeeFormValue id="2xxFWt002rGim0O18qR06T9CD" name="NONE"/>
+          </contained>
+        </contained>
+        <contained id="KlY3oy12TQ67Mi3ch49IXcl5T" name="Application Context">
+          <freeeFormValue id="cieHEV3Wy9d38C7XorAsR5pvN" name="realDevScenario" value="false"/>
+          <contained id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Methodology Type">
+            <freeeFormValue id="931f8f6yqnu276M03O3l21SMN" name="CONTROLLED_EXPERIMENT"/>
+          </contained>
+          <contained id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Research Methodology">
+            <freeeFormValue id="F7j7iT79RMPX7p6kJ398S85qD" name="EXPLORATORY"/>
+          </contained>
+          <contained id="yn1OvskIt2kQK3G867qrX260R" name="Study Classification">
+            <freeeFormValue id="3wEx66lFNG57jI60Akatt68xC" name="IN_VITRO"/>
+          </contained>
+          <contained id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Software Process">
+            <freeeFormValue id="EI198VoqM16jkVUU9y738o6x7" name="NONE"/>
+          </contained>
+          <contained id="F4tG7oC7F0qqiHboB96k2NxGu" name="Benefits">
+            <freeeFormValue id="7RftB2naofVtM487i2PHGssi0" name="increases flexibility"/>
+            <freeeFormValue id="jn1m8s8E3wTEbU8J3LaQ7be78" name="increases efﬁciency"/>
+            <freeeFormValue id="tjL4d1HS85FopMqmV1K86cgJO" name="the MDGD approach can be useful to less experienced developers"/>
+          </contained>
+          <contained id="al2grnr6f9dM996USOaMxmhFx" name="Drawbacks">
+            <freeeFormValue id="4PJU41DFG4l7SKyQoHnR5L6AR" name="decreses the developer’s familiarity with the code"/>
+          </contained>
+          <contained id="c17YUrAL90h19h60rcvrNPMvU" name="Technologies">
+            <freeeFormValue id="gG6V8Yso3Natn0xmG1YQ2llkD" name="jMonkeyEngine"/>
+          </contained>
+          <contained id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Confounding Factors">
+            <freeeFormValue id="ylh5s55CPo5888qDI1mOq18Y8" name="Unbalanced teams - group B had less participants with experience in game development, so in a more balanced scenario this difference could be smaller."/>
+          </contained>
+          <contained id="3EW1F1pi00yRff7dbiXyS0Kn0" name="Prototypes">
+            <freeeFormValue id="269eT2Wj7SNMxew1Oemn2VDm1" body="The experiment was planned to be conducted with undergraduate students, volunteers from Information Systems and Computer Science courses at Unifran (Franca/SP) and Libertas Faculdades Integradas (São Sebastião do Paraíso/MG). It was required that they should have been approved in Object-Oriented Programming subject." name="Experiment resulting in 12 prototypes" value="52 undergraduate students registered, only 12 completed it"/>
+          </contained>
+          <contained id="lc82iB1MGRo1pTg4B6TjK8J9K" name="Lessons">
+            <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+          </contained>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="MHHmGCEc2VT07V82T9L1T1MoW" name="Research Group">
+        <comments id="0kqPSY3VPrN0ifSL86N0Icy4Y" body="Ely Fernando do Prado, Daniel Lucrédio"/>
+        <freeeFormValue id="O2m11xdNnqf11T183T8L5rt4j" name="Group 3"/>
+      </descriptorGroup>
+    </classification>
+    <solution id="Fx07F9q89a29YYkSJI56NG2k5">
+      <artifact xsi:type="rasppmde:Toolbox" id="BwNHINdQEd29M01jD6nspuS7R" name="jMonkeyEngine IDE">
+        <artifacts xsi:type="rasppmde:ComposedTransformationArtifact" id="l90pTA7ub982SxfC8p5V1QwqN" name="code generators" version="" digestValue="" index="0" view="" endogenous="true" intention="Translation" classification="M2T">
+          <abstraction id="SPKJsJ54TWqb0y0Jwq2ICb4ee" metafacility="//@models.1"/>
+          <inputs xsi:type="rasppmde:TransformationIO" id="C1rEQV9pRfH2fETF5402S9hde" name="scenario" type="//@ownedElements.0/@ownedElements.14"/>
+          <inputs xsi:type="rasppmde:TransformationIO" id="wDi6FCu0EB1dWt1m2VkN21xFe" name="actor" type="//@ownedElements.0/@ownedElements.14"/>
+          <inputs xsi:type="rasppmde:TransformationIO" id="PnIBWMNxtw3iNDq1SCahx9POU" name="camera" type="//@ownedElements.0/@ownedElements.14"/>
+          <outputs xsi:type="rasppmde:TransformationIO" id="DiT45WegqK7n1HGGGuhl3JKmg" name="code" type="//@ownedElements.0/@ownedElements.4" direction="OUT"/>
+        </artifacts>
+        <artifacts xsi:type="rasppmde:XMLSchema" id="1eBbU0Bhf3YGyiAHWpWVl9yJ1" name="Scenario visual editor" metaMetafacility="//@artifacts.0/@artifacts.0"/>
+        <artifacts xsi:type="rasppmde:XMLSchema" id="qvaFF2mGfQ5pnLdv73YxmXsY5" name="Character visual editor" metaMetafacility="//@artifacts.0/@artifacts.0"/>
+        <artifacts xsi:type="rasppmde:XMLSchema" id="WEj23DWTT58l4N2s4J272IY4h" name="Camera visual editor" metaMetafacility="//@artifacts.0/@artifacts.0"/>
+      </artifact>
+    </solution>
+    <downloadInfo id="00Qfn53ksGHRou47OjTt9Uf5j" body="" pkgKind="REFERENCE_TO_URL" info="jMEGenerator Github Download">
+      <location id="s28bBySX5XVOWgNtrCNQ6dnSy" pathKind="URL" path="github.com/elyprado/jMEGenerator"/>
+    </downloadInfo>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="OtIap2f9BUaewiU54CVKRynvt" name="S04 - A Workflow for Model Driven Game Development">
+    <comments id="h4ekR98saFxVuj82I7n8h6so8" body="Os autores discutem muito sobre como as coisas deveriam ser feitas, mas não trazem nada de valor para a parte empíica. Além disso, Não ficou claro o workflow/toolchain que o artigo se propôs à apresentar. Os autores também confundem variabilidade de metamodelo comvariabildiade de domínio, gereando confusão."/>
+    <classification id="Df8o51riU8c06aQh0NsBH38il">
+      <descriptorGroup id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Publication type">
+        <freeeFormValue id="U16IouNxG5496rc0dgHoP2B24" name="Methodology paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Artifact Development Contexts">
+        <freeeFormValue id="JDV1iYakNk3Ga8g99U57k5iQr" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="gG6V8Yso3Natn0xmG1YQ2llkD" name="System/Software Domains">
+        <freeeFormValue id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Lifecycle Phases">
+        <freeeFormValue id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Development"/>
+      </descriptorGroup>
+      <descriptorGroup id="j69B3Ew46kNbk0Y1jMp5Wy4d8" name="Modeling Languages/Notations">
+        <freeeFormValue id="o6JSqs389by242MpKS07Wch71" name="Real Coins DSL"/>
+        <freeeFormValue id="o6JSqs389by242MpKS07Wch71" name="Pervasive Game Ontology (PerGO)"/>
+      </descriptorGroup>
+      <descriptorGroup id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Artifact Types">
+        <freeeFormValue id="lyi3UC3uJb1051d0w9u5mMVjA" name="EMF"/>
+        <freeeFormValue id="8TQ4S5kQ0kHan4h1I2D9C95TA" name="Java model transformations"/>
+      </descriptorGroup>
+      <descriptorGroup id="gG6V8Yso3Natn0xmG1YQ2llkD" name="Required Tool">
+        <freeeFormValue id="65HoNoqiH1T98R8Get7s919L3" name="PerGO"/>
+        <freeeFormValue id="iU4jkSJVpR33S2l1WtSIkl2bj" name="Sample Reflective Ecore Model Editor"/>
+      </descriptorGroup>
+      <descriptorGroup id="NsV424K64gYu6OR8e9HG9L4aX" name="Genre">
+        <freeeFormValue id="2IxVKrKVjEP7KuPb28KFxQwFJ" name="Treasure-hunting games"/>
+      </descriptorGroup>
+      <descriptorGroup id="3NN93Q8gfhxP6E3Vcf0JDB6Pp" name="Research Group">
+        <comments id="590EQCy1SE564a93i916Rd29G" body="Hong Guo, Hallvard Trætteberg, Alf Inge Wang, Shang Gao"/>
+        <freeeFormValue id="Dmg7DVw02flrHdK1OQwP5B0ae" name="Group 4"/>
+      </descriptorGroup>
+      <descriptorGroup id="a01nG19t3tFXCfahMBW2C8c0F" name="Application Context">
+        <description id="i8A2Wbe8os3f6pSJ2xI5EU2V5" name="This case study was performed by the authors"/>
+        <freeeFormValue id="sfFlH1jL2a78Kcn3aiEN1ATQ4" name="realDevScenario" value="false"/>
+        <contained id="Tw022RY8Uj0p5p6MoJVWh13M1" name="Methodology Type">
+          <freeeFormValue id="Rx3DpD3KYt38073v1u14BkA5F" name="PROOF_OF_CONCEPT"/>
+        </contained>
+        <contained id="v24jo924SYG42Q27EIvwW3mwJ" name="Research Methodology">
+          <freeeFormValue id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="NONE"/>
+        </contained>
+        <contained id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="Study Classification">
+          <freeeFormValue id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="NONE"/>
+        </contained>
+        <contained id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="Software Process">
+          <freeeFormValue id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="NONE"/>
+        </contained>
+        <contained id="8qbVffx8A0BguV2Kj5HE6yj9f" name="Benefits">
+          <freeeFormValue id="6l8262029DqnJf2xB8Gw2RFjA" name="less manual coding"/>
+          <freeeFormValue id="tLs6wyPe45mbREu8BkA1ae0fj" name="far less time to complete the development"/>
+          <freeeFormValue id="AQx9sypdej2l5Txeyc1BGk7lH" name="useful and easy to use"/>
+        </contained>
+        <contained id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="Drawbacks">
+          <freeeFormValue id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="NONE"/>
+        </contained>
+        <contained id="w85E9HvUa57Qho9g6HKxYpueQ" name="Technologies">
+          <freeeFormValue id="PHxdhkp7JIS6AN5lEtHERn126" name="NONE"/>
+        </contained>
+        <contained id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="Confounding Factors">
+          <freeeFormValue id="wiw1mcpiYlCD4ptJX9pM9m0qO" name="NONE"/>
+        </contained>
+        <contained id="6ucVkR8h83hDHdf1i2CjYuYfb" name="Prototypes">
+          <freeeFormValue id="nhwTSw0VLJcH2S2dv7puJGP6O" name="RealCoins pervasive game case"/>
+        </contained>
+        <contained id="8t43kGlf1051NPdd16iNcYyvV" name="Open Questions">
+          <freeeFormValue id="qYs7sFOkqux55yq1SyFkhPRyQ" name="1) How to transform the form of pre-production documents so that they can be used in development?"/>
+          <freeeFormValue id="J35Nd7H8OI4kDLT59jo8YKYID" name="2) How to identify implied information?"/>
+          <freeeFormValue id="3Q13kOM98114Uk6cYfg99gTtb" name="3) How to apply domain knowledge for the creative process?"/>
+        </contained>
+        <contained id="m6Pw398asyR6dBcG0bt10id7u" name="Lessons">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+      </descriptorGroup>
+    </classification>
+    <solution id="54sSk1Ihcy1dK0d0E2IGQH6Rh">
+      <artifact xsi:type="rasppmde:Metamodel" id="2HU3266BfkSd3Um0MyX1Wip5O" name="Real Coins" metaMetafacility="//@models.0/@artifacts.0"/>
+    </solution>
+    <relatedAssets xsi:type="rasppmde:AssetRelationship" id="q14c0V37Bl5Mb06e87EF3K539" name="Previous papers" relationshipType="Suplementary Material" assetRelationshipType="COMPLEMENTARY">
+      <assetReferences id="yLPwva87B7TmP064wk3j6aymV" name="References S07" version="">
+        <comments id="AB8GQgctsu1blU1hdYqgIAPl6" body="H. Guo, H. Trætteberg, A. I. Wang, and S. Gao, &quot;RealCoins: A Case Study of Enhanced Model Driven Development for Pervasive Game,&quot; International Journal of Multimedia and Ubiquitous Engineering, vol. 10, 2015. "/>
+        <externalReference id="3lr7R5M8EIaA8fyWBb9I828O9" value="" kind="External" sourceId="OtIap2f9BUaewiU54CVKRynvt" targetId="4YOI91yhy0bFBp0GXm46Rs10O"/>
+      </assetReferences>
+      <assetReferences id="QhokNrS8HxqV5JrsqMF1EYEwk" name="Suplementar 2">
+        <comments id="12J39O4LCSFmGtr4Ki54BoGEl" body="H. Guo, S. Gao, J. Krogstie, and H. Trætteberg, &quot;An Evaluation of an Enhanced Model Driven Approach for Computer Game Creation,&quot; in Enterprise, Business-Process and Information Systems Modeling, ed: pringer, 2015."/>
+      </assetReferences>
+    </relatedAssets>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="qtj768chwCWiQ7PYBPESIeAF6" name="S05 - Building a Game Engine A Tale of Modern Model-Driven Engineering">
+    <classification id="176O60cXrnH50ORAMusVNgSaq">
+      <descriptorGroup id="H87G5C9OO1j11JwVqw36u7AaB" name="Publication type">
+        <freeeFormValue id="4BQl56FsIQS706amXm2rac5Rj" name="Toolchain paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="sn8rh9WfrMVe17528UvgN7e89" name="Artifact Development Contexts">
+        <freeeFormValue id="4BQl56FsIQS706amXm2rac5Rj" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="4BQl56FsIQS706amXm2rac5Rj" name="System/Software Domains">
+        <freeeFormValue id="4BQl56FsIQS706amXm2rac5Rj" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="gD4lb0smSe9vGIG2UhMgFp6Xx" name="Lifecycle Phases">
+        <freeeFormValue id="4BQl56FsIQS706amXm2rac5Rj" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="p0LI262MW5i0Cq2860LRy7nsA" name="Modeling Languages/Notations">
+        <freeeFormValue id="wGxg95TvF886me2TJ09vl3cMV" name="Mental Model DSL (PhyDSL-2)"/>
+      </descriptorGroup>
+      <descriptorGroup id="S1yxQ8rT73E1e8DoeF0Qiy9PH" name="Artifact Types">
+        <freeeFormValue id="75y42sfkQg9KAiHvj22xvcqQI" name="Textual DSL/XText"/>
+        <freeeFormValue id="k2N11P8k30LEls8RHoJdiiGAk" name="M2M ATL Templates"/>
+        <freeeFormValue id="AtjJLAja9jFmQ9gg7n2vQBMrs" name="M2T Acceleo Templates"/>
+      </descriptorGroup>
+      <descriptorGroup id="4BQl56FsIQS706amXm2rac5Rj" name="Required Tool">
+        <freeeFormValue id="XYt2i6ay1885q0dFacYQA8jF9" name="Eclipse IDE"/>
+        <freeeFormValue id="4GH3O7K6E0F09T9dgAxJsnprR" name="ATL"/>
+        <freeeFormValue id="tcd8951VE7VW09pkaPq65u1uw" name="Acceleo"/>
+      </descriptorGroup>
+      <descriptorGroup id="1H8I3wD6gu0eegl0374Al8BYI" name="Genre">
+        <freeeFormValue id="635Ka7bE4a9tntk8v7KHWUL94" name="Physics-based games"/>
+      </descriptorGroup>
+      <descriptorGroup id="OIv4yNo1e23lh5wJBRr7332TE" name="Application Context">
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Methodology Type">
+          <freeeFormValue id="YN86j5n42b4I9Bd997gXRlS4V" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Research Methodology">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Study Classification">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Software Process">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Benefits">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Drawbacks">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Technologies">
+          <freeeFormValue id="Ax6mimcOT82EPwRkoLFbF4jHj" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Confounding Factors">
+          <freeeFormValue id="40Aml5cqn8I79Fmx01HvnuFIL" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Prototypes">
+          <freeeFormValue id="i2x2vAXT5yptceG6T9q7K87Ym" name="NONE"/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Open Questions">
+          <freeeFormValue id="f44bJdMgMWf8lBUGLQhYjMpG8" name="NONE" value=""/>
+        </contained>
+        <contained id="40Aml5cqn8I79Fmx01HvnuFIL" name="Lessons">
+          <freeeFormValue id="up1vk597hk89bUk0QOXwX4359" name="NONE"/>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="bi8vBBPiQ29F9BOL34XP9wpNh" name="Research Group">
+        <comments id="4J1gvY9G99hbuP873BALrNcx7" body="Victor Guana, Eleni Stroulia, Vina Nguyen"/>
+        <freeeFormValue id="A3k7TdP9y0XrH2g53lK90KVcN" name="Group 5"/>
+      </descriptorGroup>
+    </classification>
+    <solution id="v56JyqIW4S0F4n3QN42SlM1lO">
+      <artifact xsi:type="rasppmde:Toolbox" id="kM24d94cw6l4T982ha8fr0wcF" name=" PhyDSL-2 Game Engine Implementation">
+        <artifacts xsi:type="rasppmde:Grammar" id="Y2D8o1UVwC322vK1P1S8Fit4H" name="PhyDSL 2" metaMetafacility="//@artifacts.4"/>
+        <artifacts xsi:type="rasppmde:Metamodel" id="Aw5PNLTi3U6yG9DMKd6H6TEPg" name="game layout" metaMetafacility="//@artifacts.4"/>
+        <artifacts xsi:type="rasppmde:Metamodel" id="5XypOF4RR9VWUi1U9H26qECt4" name="game dynamics" metaMetafacility="//@artifacts.4"/>
+        <artifacts xsi:type="rasppmde:Metamodel" id="gPjyPA8iP94qq1iS1I5540FW6" name="game scoring" metaMetafacility="//@artifacts.4"/>
+        <artifacts xsi:type="rasppmde:Metamodel" id="vi3N8KncovHErFi35sE86Q9R0" name="game controls" metaMetafacility="//@artifacts.4"/>
+        <artifacts xsi:type="rasppmde:ComposedTransformationArtifact" id="bLY1Naidc74PHV02nFOUPENim" name="Generate Code" intention="Translation" sequential="true">
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="6VitOEp2yW5mj2GH77M64Ji83" name="T1" version="" index="" view="" intention="Translation">
+            <abstraction id="m9iN6QpSnHcWw9BT51QGqP1fW" metafacility="//@artifacts.6"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="1Mv46NA4sKgU904957j0465m6" name="T2" version="" index="" view="" intention="Translation">
+            <abstraction id="qSQtegENv18299sg8L5751bfF" metafacility="//@artifacts.6"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="3685BVC86KLS8D36xjIV7L7iK" name="T3" version="" index="" view="" intention="Translation">
+            <abstraction id="N8ChE8cOS8EQU85qtfpy2V5u9" metafacility="//@artifacts.6"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="1J3PrfLkycG1gJ50po0lGnGyH" name="T4" version="" index="" view="" intention="Translation">
+            <abstraction id="jpOwyN26L0p1NY3CTt6S82f02" metafacility="//@artifacts.6"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="7iNq1uiyJm5I027VLu8knr4W7" name="T5" version="" index="" view="" intention="Translation" classification="M2C">
+            <abstraction id="Eh883v2Cu630hLXf8js8y9oJ2" metafacility="//@artifacts.1"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="93a67Hr3xn6tndF1rM4dCeSj2" name="T6" version="" index="" view="" intention="Translation" classification="M2C">
+            <abstraction id="W5RJO34srE0Fsfj532NU18UQ2" metafacility="//@artifacts.1"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="1SPK8nHFv4R2Hy8LJD73guRxH" name="T7" version="" index="" view="" intention="Translation" classification="M2C">
+            <abstraction id="W5RJO34srE0Fsfj532NU18UQ2" metafacility="//@artifacts.1"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="LA1Q2edQgSDvU7SWx0esD8Du1" name="T8" version="" index="" view="" intention="Translation" classification="M2C">
+            <abstraction id="KIS12ydgG3B2pboYr7huVs2q0" metafacility="//@artifacts.1"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="U6962hQW5OtcM130ibepU9VYd" name="T9" version="" index="" view="" intention="Translation" classification="M2C">
+            <abstraction id="KIS12ydgG3B2pboYr7huVs2q0" metafacility="//@artifacts.1"/>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="Un1RseW5P3Rs8K5v2UUMES7DE" name="T10" version="" index="" view="" intention="Translation" classification="M2C">
+            <abstraction id="KIS12ydgG3B2pboYr7huVs2q0" metafacility="//@artifacts.1"/>
+          </artifacts>
+        </artifacts>
+        <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="654fq73cX6O0p7jt4AE11333d" body="visualization and trace analysis tool" name="ChainTracker" index="" endogenous="true" intention="Analysis"/>
+      </artifact>
+    </solution>
+    <relatedAssets xsi:type="rasppmde:AssetRelationship" id="nb0QvXP4x16hW94444qmE4jib" name="Reference to the metamodel">
+      <assetReference id="LE8749iS4RBM1q1DN0o8ev87y" name="">
+        <comments id="7PKqIPrSMs3MEdV0CpiXXp0Fk" body="V. Guana and E. Stroulia, “Phydsl: A code-generation environment for 2d physics-based games,” in 2014 IEEE Games, Entertainment, and Media Conference(IEEE GEM), 2014."/>
+      </assetReference>
+    </relatedAssets>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="vq57f0YOqpsiaNO4AvUnSlROh" name="S06 - Model-Driven Serious Game Development Integration of the Gamification Modeling Language GaML with Unity">
+    <classification id="1WNyfGgqR5nYHNi3J94N1N8Xy">
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Publication type">
+        <freeeFormValue id="sq2414Ml7i852eGV9643sYCdm" name="Technical paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Artifact Development Contexts">
+        <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="System/Software Domains">
+        <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Lifecycle Phases">
+        <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="None"/>
+      </descriptorGroup>
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Modeling Languages/Notations">
+        <freeeFormValue id="2NxyIGNJB1k7Fthqh9b0MQ6Xq" name="Gamification Modeling Language (GaML)"/>
+      </descriptorGroup>
+      <descriptorGroup id="AFEa1Jorw0qmqyE62I57HAkHT" name="Artifact Types">
+        <freeeFormValue id="I975mi19Wv17FIpL2Eh4V583a" name="Textual DSL/XText"/>
+        <freeeFormValue id="5xvBBq4gSU0d527UGTDjc7fbg" name="M2T XTend Templates"/>
+      </descriptorGroup>
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Required Tool">
+        <freeeFormValue id="E0Ah6cly0J60WBaHHKbxsw5ai" name="Unity"/>
+        <freeeFormValue id="MPK8772tv49r22VAi99Jhyx02" name="XText"/>
+        <freeeFormValue id="qlUfXRiroK4C9y617i87yM2yw" name="XTend"/>
+      </descriptorGroup>
+      <descriptorGroup id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Genre">
+        <freeeFormValue id="oUe2Sna71PBm2ls9E11Iyd1Id" name="Serious Games"/>
+      </descriptorGroup>
+      <descriptorGroup id="Dru4N1j242pE10bPdEb3RpVQS" name="Application Context">
+        <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Application Context">
+          <description id="27oxKYqq6Y07MKauO784c3573" name="This case study was performed by the authors"/>
+          <freeeFormValue id="nHNFepqf91qCXe41KQjMoqSCa" name="realDevScenario" value="false"/>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Methodology Type">
+            <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="PROOF_OF_CONCEPT"/>
+          </contained>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Research Methodology">
+            <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="NONE"/>
+          </contained>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Study Classification">
+            <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="NONE"/>
+          </contained>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Software Process">
+            <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="NONE"/>
+          </contained>
+          <contained id="29nG3146gxBw46smdYKuSaiD8" name="Benefits">
+            <freeeFormValue id="YUK33LU4bPC4jTgt2b6U3mQKP" name="NONE"/>
+          </contained>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Drawbacks">
+            <freeeFormValue id="n1quXO926a24FYnA6J5FQKBgm" name="NONE"/>
+          </contained>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Technologies">
+            <freeeFormValue id="8m43qLfN2M3nmNRCk5lSkjrOa" name="Unity"/>
+          </contained>
+          <contained id="E7T8qk08R60ewVx0Ry5QgYxMw" name="Confounding Factors">
+            <freeeFormValue id="E7T8qk08R60ewVx0Ry5QgYxMw" name="NONE"/>
+          </contained>
+          <contained id="89vl4OK8Ynjua91q4jt2C3bAE" name="Prototypes">
+            <freeeFormValue id="20WH4WfYsJo3mLK6r0LamxxTc" name="Stop Smoking app"/>
+          </contained>
+          <contained id="0MR3Dpc5u2gyoYNi0rAlw6UT1" name="Open Questions">
+            <freeeFormValue id="TiPexa19C778mn6hC6R5197aP" name="Empirical" value="planning to conduct a quantitative evaluation of the proposed approach"/>
+          </contained>
+          <contained id="pPa321roDoMgOJ3CyHtJuklsj" name="Lessons">
+            <freeeFormValue id="p3cgS5CTfFSXV9TE9jrj5YI9J" name="NONE"/>
+          </contained>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="fp54W9gbgmH5EIarE9I43xXVb" name="Research Group">
+        <comments id="77GH3SRcL6GPweBe7skUdNv21" body="Amir Matallaoui, Philipp Herzig, Rüdiger Zarnekow"/>
+        <freeeFormValue id="Pal66ggcQJ3t5h6GifUK2o7Rg" name="Group 6"/>
+      </descriptorGroup>
+    </classification>
+    <solution id="Ga2M0NdWDR14hD3n2899dnKix">
+      <artifact xsi:type="rasppmde:Toolbox" id="8NY77gcmH7k3a4cE9N6fAs1s1" name="GaML Toolbox">
+        <artifacts xsi:type="rasppmde:Grammar" id="uAV7Axp6EV88AJqCSaNx5CanN" name="GaML" metaMetafacility="//@artifacts.4"/>
+        <artifacts xsi:type="rasppmde:ComposedTransformationArtifact" id="RUn8Vwc1OrHTfnOnHb41oc050" name="Code Generator" index="" intention="Translation">
+          <artifacts xsi:type="rasppmde:ComposedTransformationArtifact" id="6v4SKol5W1CIMm9ix20Law058" name="" intention="Parsing" classification="C2M">
+            <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="PRo90mAL1Y5A87iK5qGemB07Q" name="LEXER" intention="Parsing" classification="C2M"/>
+            <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="v97x85o7y2GDHy5ygI64Dg6Dv" name="PARSING" classification="C2M">
+              <outputs xsi:type="rasppmde:TransformationIO" id="nW1Y4v2P17y6tq4Y8M7wOrHPd" name="gaml model" type="//@ownedElements.0/@ownedElements.0" direction="OUT"/>
+            </artifacts>
+          </artifacts>
+          <artifacts xsi:type="rasppmde:AtomicTransformationArtifact" id="W9Ft158TL16n3lLHBF3FUFdgP" name="Java Code Generator" endogenous="true" intention="Translation" classification="M2C">
+            <abstraction id="mKV7bWE5RXWQdys3uD8gDpnt5" metafacility="//@artifacts.2"/>
+            <inputs xsi:type="rasppmde:TransformationIO" id="9p6MDhRy7Kd89lil5TcJC661n" name="input model" type="//@ownedElements.0/@ownedElements.0" connector="//@assets.5/@solution/@artifact.0/@artifacts.1/@artifacts.0/@artifacts.1/@outputs.0"/>
+          </artifacts>
+        </artifacts>
+      </artifact>
+    </solution>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="4YOI91yhy0bFBp0GXm46Rs10O" name="S07 - RealCoins A Case Study of Enhanced Model Driven Development for Pervasive Games">
+    <classification id="V67M4Y7Wh6MpG7mDT0N825JH6">
+      <descriptorGroup id="c0HQ8Fe30X1kEV66QXAa3S61S" name="Publication type">
+        <freeeFormValue id="ll9ce4hQaGk8U29641A05A9kr" name="Toolchain paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="ll9ce4hQaGk8U29641A05A9kr" name="Artifact Development Contexts">
+        <freeeFormValue id="ll9ce4hQaGk8U29641A05A9kr" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="ll9ce4hQaGk8U29641A05A9kr" name="System/Software Domains">
+        <freeeFormValue id="ll9ce4hQaGk8U29641A05A9kr" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Lifecycle Phases">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Development"/>
+      </descriptorGroup>
+      <descriptorGroup id="S1VUPxDm6q9KQy4DQSJxC6tyh" name="Modeling Languages/Notations">
+        <freeeFormValue id="96ELnAdW9o4eEpvGJQ2yYhDWu" name="Pervasive Game Ontology (PerGO)"/>
+        <freeeFormValue id="61L60CiJM5Rh8wJ9624why2rT" name="Real Coins DSL"/>
+      </descriptorGroup>
+      <descriptorGroup id="0l97oyH7uhIwsvlD842iKnDf7" name="Artifact Types">
+        <freeeFormValue id="Go5FlFfqoJ7m17mh5Ygi1rjxN" name="Textual DSL/XText"/>
+        <freeeFormValue id="F1koWC721c0KTattUIMh2hSPF" name="EMF"/>
+        <freeeFormValue id="bnQM9O6c5HOulTO34XAMf4VSa" name="Java model transformations"/>
+        <freeeFormValue id="XAO7q39Ed3kuendfu1jXXQqET" name="OCL"/>
+      </descriptorGroup>
+      <descriptorGroup id="35e724cnH7UPG3QYBhJai1w2d" name="Required Tool">
+        <freeeFormValue id="gV2WJD2b0n3WXju4PJmxYQP06" name="XTend"/>
+        <freeeFormValue id="80rcUQTEfWM1y8WYY3x94lCu6" name="Sample Reflective Ecore Model Editor"/>
+        <freeeFormValue id="NKI447ef8MCKIfEw1y1cMMS5m" name="XText Editor"/>
+        <freeeFormValue id="1j9mVrGVx22Nm07e21v7mvBwE" name="Eclipse IDE"/>
+        <freeeFormValue id="EtIfT38B7i5fEc4EvSW7A5u1y" name="Reactive AI Language (RAIL)"/>
+      </descriptorGroup>
+      <descriptorGroup id="mo06I8LThY37Ojg51GiCnITlW" name="Genre">
+        <freeeFormValue id="IFfru14pWwl1YnRH449NSba18" name="Pervasive Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="V6WepL5t88RtN6Hl3Sp001j9y" name="Application Context">
+        <contained id="YT64ah32A3E0cOfdN0G14lb9j" name="Application Context">
+          <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="realDevScenario" value="false"/>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Methodology Type">
+            <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="PROOF_OF_CONCEPT"/>
+          </contained>
+          <contained id="t666FKyP1MYVa1Uda80U8g71u" name="Research Methodology">
+            <freeeFormValue id="09XYggDk4D19PNhK5bRpak3Op" name="NONE"/>
+          </contained>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Study Classification">
+            <freeeFormValue id="hj2x8h9OxRH9Mei352GDXTHvj" name="NONE"/>
+          </contained>
+          <contained id="asV174H75O6OXYotY4R99txXp" name="Software Process">
+            <freeeFormValue id="OqY3U6xOCKY6w38rv18qKbyac" name="NONE"/>
+          </contained>
+          <contained id="lX1uf0JRS221lSm58axy1A2wt" name="Benefits">
+            <freeeFormValue id="M3U7l0prb6i2BeL6vPT0TiUA8" name="Only a few of design details need to be specified in order to produce "/>
+            <freeeFormValue id="67MaS07ls9E2tj1Tc59fw1WpV" name="increased productivity"/>
+            <freeeFormValue id="X7cD2u801G0YQno73Ok36xkYv" name="decreased complexity"/>
+            <freeeFormValue id="9UJ9uV4208l3ikgc52115bJ2S" name="quality and maintainability was improved"/>
+          </contained>
+          <contained id="7TJOE9Td0po74kfESI9Mm4KqN" name="Drawbacks">
+            <freeeFormValue id="01G42Vn4T7qB3Rqx8VhV4uXE3" name="To summarize, involving an extra layer of abstractions brings extra cost and the gain may be unknown in an open discussion"/>
+            <freeeFormValue id="Q0Pd77T3GC9W5iC2Gc0KaI3tI" name="We often faced the fact that some artifacts needed to be reconstructed"/>
+          </contained>
+          <contained id="vTPR4d7kiLUS5oXq4CF6BuTo8" name="Technologies">
+            <freeeFormValue id="47Y7YBw7yquvXKfwUhTLM0Wcu" name="Xtend"/>
+            <freeeFormValue id="o4kOSglc17n4qxCRgkYn13c7b" name="PhP"/>
+            <freeeFormValue id="ww560lwQCfo3j1Q6cn1K8yAvQ" name="XText"/>
+          </contained>
+          <contained id="B9O7P2Yj8qd5Tl2Dj0f0a7d9L" name="Confounding Factors">
+            <freeeFormValue id="2gahQ1lgVF3l5wVxA719UvyJV" name="Excuted by the authors"/>
+          </contained>
+          <contained id="2vV1gqMqDfO4UGh8vlV340bg1" name="Prototypes">
+            <freeeFormValue id="dK40Dgq7t2b2yESq48EKR70LA" name="RealCoins pervasive game case"/>
+          </contained>
+          <contained id="M2xvDfth4T7RLV4xpm9BY03nA" name="Lessons">
+            <freeeFormValue id="yyW67dxD37FC4q2fO7b02Yqo7" name="From these experiences, we realized more about the importance of an efficient workflow to support evolution"/>
+            <freeeFormValue id="S1v4s6FnMOjGKA4qnItLDw9OG" name="the cost issue for involving DSM, especially about the reconstruction of DSM, must not be overlooked"/>
+            <freeeFormValue id="0N8kRK0p0Bc1atFPEY6MeyQ3U" name="the language workbench tools available in the Eclipse platform brought us many conveniences "/>
+          </contained>
+          <contained id="PwmfU1aq0mAW5FahUsk8jTRk6" name="Open Questions">
+            <freeeFormValue id="4pqmpNbABxgCir3yu6q4F2fnN" name="NONE"/>
+          </contained>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="ytSmPV6j8tACyfy5M7Qyln7mj" name="Research Group">
+        <comments id="qeut79ayc6ecg5OUyP7N6rge9" body="Hong Guo, Hallvard Træ tteberg, Alf Inge Wan, Shang Gao"/>
+        <freeeFormValue id="w1pEnXQm88c8A311pH8rNGGmo" name="Group 4"/>
+      </descriptorGroup>
+    </classification>
+    <relatedAssets xsi:type="rasppmde:AssetRelationship" id="7xIsw10QH35YjIVAHua5aTAGR" name="" relationshipType="" assetRelationshipType="COMPLEMENTARY">
+      <assetReferences id="5gsJYF387jN45XMcrXPL1RJ57" name="paper 1">
+        <comments id="3s5MLmTpcQh5udh8e4995r1U0" body="G. Hong, H. Træ tteberg, A. I. Wang and Z. Meng, &quot;TeMPS: A Conceptual Framework for Pervasive and Social Games&quot;, Digital Game and Intelligent Toy Enhanced Learning (DIGITEL), 2010 Third IEEE International Conference on, (2010), pp. 31-37. "/>
+      </assetReferences>
+      <assetReferences id="6aQe1t6p2k5CeT8pirVF9Bfv0" name="paper 2">
+        <comments id="F1g4W7v9auAJP120GkLTTYVuL" body="G. Hong, T. Hallvard, W. Alf Inge and G. Shang, &quot;PerGO: An Ontology Towards Model Driven Pervasive Game Development, Ontologies, DataBases, and Applications of Semantics&quot;, Springer LNCS, Amantea, Italy, (2014)."/>
+      </assetReferences>
+    </relatedAssets>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="Hj60yOO2L8x2Og0j2Xd4gmaM5" name="S08 - SEGA-ARM A Metamodel for the Design of Serious Games to Support Auditory Rehabilitation">
+    <comments id="91Npr0RjjWfK4k3YQ2596t9Pp" body="The purpose that is pursued with the design of this package is to provide the speech therapist with a semiformal notation to express the characteristics of a therapy plan, keeping that information structured in a way that results understandable for serious games designers"/>
+    <classification id="K4xr71H0Ic5b0hi71uS8l00Mg">
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Publication type">
+        <freeeFormValue id="X75wgDCk05UqNe1fI4jP3NLb4" name="Guideline paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Artifact Development Contexts">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="System/Software Domains">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Lifecycle Phases">
+        <freeeFormValue id="r56a42dMs0V9WLGulcn8GpGiC" name="Design"/>
+      </descriptorGroup>
+      <descriptorGroup id="9IFv61Ls968Jmw4P04oh797u9" name="Modeling Languages/Notations">
+        <freeeFormValue id="Qj8WQv5SDMEtymbEJ3j8589mp" name="SEGA-ARM Metamodel"/>
+      </descriptorGroup>
+      <descriptorGroup id="rHCga3E3rniH6GK47wSLH1M7I" name="Artifact Types">
+        <freeeFormValue id="K1U043421Pda5uC8uWchTgJb8" name="NONE"/>
+      </descriptorGroup>
+      <descriptorGroup id="2k1t7HVv4848P13al4k6io1qe" name="Required Tool">
+        <freeeFormValue id="7DDr6HyPClHlnbpVQ3q2AV8P4" name="NONE"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Genre">
+        <freeeFormValue id="1c1S71q2Y0fsTA44I03vn20Oq" name="Serious Games"/>
+      </descriptorGroup>
+      <descriptorGroup id="2yvE8Ea75yayCeKDInP6icEd7" name="Application Context">
+        <contained id="XSo22VrvOmcyWJO6Y7aD587lB" name="Application Context">
+          <freeeFormValue id="3EY4p1sohe7w06vxOy797MYbK" name="realDevScenario" value="true"/>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Methodology Type">
+            <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="PROOF_OF_CONCEPT"/>
+          </contained>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Research Methodology">
+            <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="NONE"/>
+          </contained>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Study Classification">
+            <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="NONE"/>
+          </contained>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Software Process">
+            <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="NONE"/>
+          </contained>
+          <contained id="O9I4m0JGaD7FBd1cV233i43j0" name="Benefits">
+            <freeeFormValue id="e8PByfKmH08lpPu25yVqu5Jlv" name="provides a semiformal notation as a conceptual guide for achieving the goal of expressing and therefore implementing serious games"/>
+          </contained>
+          <contained id="I44Nt21c8YtknAw9WBbOcf6sP" name="Drawbacks">
+            <freeeFormValue id="2YLOpYrQ02029S7kN5Xk7F047" name="the use of knowledge bases and taxonomies is not considered resulting on the lack of a repository of activities to provide to the developers"/>
+          </contained>
+          <contained id="cb8jcyhC3at09Ov074gDMQs2L" name="Technologies">
+            <freeeFormValue id="6C3ur552Dw89iKV7LU5546u6r" name="NONE"/>
+          </contained>
+          <contained id="y78aW9he3ag0qVFKGQRFv2aNo" name="Confounding Factors">
+            <freeeFormValue id="2wm1Kwc9IN9f0G1s5kwwCA1fT" name="Excuted by the authors, but considering real requirements"/>
+          </contained>
+          <contained id="9Tw1y0eTi4Fn1VEXj57oacxT2" name="Prototypes">
+            <freeeFormValue id="3aNttD8xbRlMnrt8wqPUcDeih" name="Case 1 - A prototype Froneme the frog"/>
+            <freeeFormValue id="xOHCtv5SWQ1njkE471r6a7P46" name="Case 2 - Roberto the robot"/>
+          </contained>
+          <contained id="tgk94202n6y8g7AFK6mub71ay" name="Lessons">
+            <freeeFormValue id="246heQBe1Je9b8P8TEyUYAF5J" name="NONE"/>
+          </contained>
+          <contained id="8HQ00N09nxoxo9jC435O11l2R" name="Open Questions">
+            <freeeFormValue id="246heQBe1Je9b8P8TEyUYAF5J" name="NONE"/>
+          </contained>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="RbNy53vn306wjH3J8dBVxsi1C" name="Research Group">
+        <comments id="6KC5SwMO3C2Nx8O0eCiJ8fhS8" body="David Céspedes-Hernández, Jorge Luis Pérez-Medina, uan Manuel González-Calleros, Francisco J. Álvarez Rodríguez, Jaime Muñoz-Arteaga"/>
+        <freeeFormValue id="0L5xS9JcbVw91li90Ua8pl310" name="Group 7"/>
+      </descriptorGroup>
+    </classification>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="o43op7BJxfncn7nLBL2SvoM7i" name="S09 - Engine- Cooperative Game Modeling (ECGM) Bridge Model-Driven Game Development and Game Engine Tool-chains">
+    <classification id="ltU6BJ2yxE44iVkbBtP780bKw">
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Publication type">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Toolchain paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Artifact Development Contexts">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="System/Software Domains">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Lifecycle Phases">
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Development"/>
+      </descriptorGroup>
+      <descriptorGroup id="y78aW9he3ag0qVFKGQRFv2aNo" name="Modeling Languages/Notations">
+        <freeeFormValue id="EWK0dl2nn1KP9hdO4JlQ3318V" name="Pervasive Game Ontology (PerGO)"/>
+        <freeeFormValue id="AMVAPNm9bB67JdVpIXLklV0NA" name="Real Coins DSL"/>
+      </descriptorGroup>
+      <descriptorGroup id="r59sCwK4b00XLpdTKTXmeu9uY" name="Artifact Types">
+        <freeeFormValue id="75RyvfbSe1se3nRegFxkhmuw7" name="EMF"/>
+        <freeeFormValue id="y78aW9he3ag0qVFKGQRFv2aNo" name="Java model transformations"/>
+      </descriptorGroup>
+      <descriptorGroup id="hdPLvJTvHv6viqsBEMFctgHHM" name="Required Tool">
+        <freeeFormValue id="bB5b7rQ4vicK0iqy5xxR49bo1" name="Eclipse IDE"/>
+        <freeeFormValue id="dFYG9afypJiIOXALQJK5myvbr" name="Sample Reflective Ecore Model Editor"/>
+        <freeeFormValue id="Jp9oot9Q1Si0480U2vrEMNk4r" name="Acceleo M2T"/>
+        <freeeFormValue id="O6006Bs8l8fSuh2HdhGBq1kBB" name="Torque 2D engine"/>
+        <freeeFormValue id="TpGLoWik1ra3PMrPTdld2WG5y" name="Reactive AI Language (RAIL)"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Genre">
+        <freeeFormValue id="6N670E19M7RVt7G890Bv813EC" name="Action/adventure games"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Application Context">
+        <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Application Context">
+          <description id="I9MkSxI39RuEWA07ckOg6pxJY" name="This case study was performed by the authors"/>
+          <freeeFormValue id="xD16o6KEOb664tEIf4t4fly6E" name="realDevScenario" value="false"/>
+          <contained id="93exvV1xb6Mx54M5m2fyi148a" name="Methodology Type">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="PROOF_OF_CONCEPT"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Research Methodology">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Study Classification">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Software Process">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="6y4k9r5gq7v9qj52Y4472kRK6" name="Benefits">
+            <freeeFormValue id="vPl65V28tBbds8joxkL9m9X62" name="The game-specific code should be the most cumbersome and error-prone to program, but with the ECGM approach this was avoided. "/>
+            <freeeFormValue id="F90Prv8V838JjN589VQNU1nN9" name="The modeling experience is quite convenient "/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Drawbacks">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Technologies">
+            <freeeFormValue id="Vpbfs5hWW221FM8Q6K23s4u46" name="Torque 2D"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Confounding Factors">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Prototypes">
+            <freeeFormValue id="MgxkHb7knEsNP0YUDBUrj0Q4y" name="Orc’s Gold"/>
+          </contained>
+          <contained id="72tBof69019YDPc2uQVsKs2PY" name="Lessons">
+            <freeeFormValue id="cm0SS0WSY47IgLp81pJWt5ftf" name="The use of language workbench, i.e. EMF and Acceleo also significantly reduced the initial investment. "/>
+            <freeeFormValue id="r3DAO849IbF9M8rs4lVBY4v94" name="The integrated toolchain showed that the ECGM approach can make MDGD and engine based development feasible and convenient"/>
+          </contained>
+          <contained id="6pJ7rBduOQIDyTW4R69ICX65T" name="Open Questions">
+            <freeeFormValue id="XSy9yGE8m1r3hiDeMyUxt432S" name="NONE"/>
+          </contained>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="85S5u3o7c3045EkB9fAPI2Ac5" name="Research Group">
+        <comments id="LOchaqGn02L02U3AS483752am" body="Meng Zhu, Alf Inge Wang, Hallvard Trætteberg"/>
+        <freeeFormValue id="9RumVx96QhgKaNTM4uyovv8Di" name="Group 4"/>
+      </descriptorGroup>
+    </classification>
+  </assets>
+  <assets xsi:type="rasppmde:ReusableAsset" id="4gnVa76eIO0K0I57LcO4yN108" name="S10 - Ontology-Based Domain Analysis for Model Driven Pervasive Game Development">
+    <classification id="87D6KXkmF3tv0KShhL6qTbqN4">
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Publication type">
+        <freeeFormValue id="P20p1s20LSD3s6mS12Jm3e579" name="Metamodel paper"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Artifact Development Contexts">
+        <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="Academy" value=""/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="System/Software Domains">
+        <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Lifecycle Phases">
+        <freeeFormValue id="4B4B02BjQdXm4XJG090R28LpR" name="Domain Analisys"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Modeling Languages/Notations">
+        <freeeFormValue id="QCRkp23HjsRbPIkcPD9G08ie8" name="Pervasive Game Ontology (PerGO)"/>
+      </descriptorGroup>
+      <descriptorGroup id="orD33hI0W0HMPWWj26xi5IQuO" name="Artifact Types">
+        <freeeFormValue id="RJVjdqA9n14H5DJP4fvLshsIK" name="NONE"/>
+      </descriptorGroup>
+      <descriptorGroup id="82NK897BbO70wsAVvsb129276" name="Required Tool">
+        <freeeFormValue id="xG0M46uLAGM24liG067SfXn81" name="NONE"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Genre">
+        <freeeFormValue id="671s5J8wQO2sOPtSUiN9C1S9Q" name="Pervasive Game"/>
+      </descriptorGroup>
+      <descriptorGroup id="I9MkSxI39RuEWA07ckOg6pxJY" name="Application Context">
+        <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Application Context">
+          <description id="I9MkSxI39RuEWA07ckOg6pxJY" name="This case study was performed by the authors"/>
+          <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="realDevScenario" value="false"/>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Methodology Type">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="PROOF_OF_CONCEPT"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Research Methodology">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Study Classification">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Software Process">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="TE096Mylh6kWgSY4mt6Ep3YMI" name="Benefits">
+            <freeeFormValue id="74AThXHc3W4stX0Mx5GY0WMCF" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Drawbacks">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Technologies">
+            <freeeFormValue id="7r3U48tvA22lM83teunt592MQ" name="NONE"/>
+          </contained>
+          <contained id="I9MkSxI39RuEWA07ckOg6pxJY" name="Confounding Factors">
+            <freeeFormValue id="I9MkSxI39RuEWA07ckOg6pxJY" name="NONE"/>
+          </contained>
+          <contained id="VUNh1SIBM26GVyVqV8G0yUA0t" name="Prototypes">
+            <freeeFormValue id="Q4Xr4m71t4DL33M3T36TgGNPi" name="Treasure Hunt"/>
+          </contained>
+          <contained id="5ffnUuY3W70C698T9UBawTBBl" name="Lessons">
+            <freeeFormValue id="nLE0p3jvB5X3q1Eua0INvsC9E" name="NONE"/>
+          </contained>
+          <contained id="l656G73f0Rk91Twulx0mxexke" name="Open Questions">
+            <freeeFormValue id="XSy9yGE8m1r3hiDeMyUxt432S" name="NONE"/>
+          </contained>
+        </contained>
+      </descriptorGroup>
+      <descriptorGroup id="O1fafvqg7Wdb0k1P121E3l4C1" name="Research Group">
+        <comments id="0hniibwWBMfo1639s8SFe3Rvr" body="Hong Guo, Shang Gao, Hallvard Trætteberg, Alf Inge Wang, Letizia Jaccheri"/>
+        <freeeFormValue id="oSR1EY4G95EHpx0fh6Tn5hm5y" name="Group 4"/>
+      </descriptorGroup>
+    </classification>
+  </assets>
+  <models xsi:type="rasppmde:Toolbox" id="5R5BLau0nBk8t0764S5MEFJkN" name="Eclipse Modelling Framework">
+    <downloadInfo id="1Ap8j8JjGlFiO4HOSA52XTMGJ" body="" pkgKind="LINKED_WITH_UPDATESITE" info="EMF and XSD">
+      <location id="3305RT2UIDB9D2JV494wkCs9R" body="EMF and XSD" pathKind="URL" path="http://www.eclipse.org/modeling/download.php?file=/modeling/emf/emf/downloads/drops/2.12.0/R201605260356/emf-xsd-Update-2.12.0.zip"/>
+    </downloadInfo>
+    <downloadInfo id="3305RT2UIDB9D2JV494wkCs9R" pkgKind="WEBSITE" info="EMF and XSD">
+      <location id="3305RT2UIDB9D2JV494wkCs9R" body="All in One SDK" pathKind="URL" path="http://www.eclipse.org/modeling/download.php?file=/modeling/emf/emf/downloads/drops/2.12.0/R201605260356/emf-xsd-SDK-2.12.0.zip"/>
+    </downloadInfo>
+    <artifacts xsi:type="rasppmde:MetamodelGenerator" id="e3S9h6MX1X984E0TGcGt2G0cK" body="http://www.eclipse.org/modeling/emf/" name="EMF 2.4" version="2.4" mtType="DSL" generator="EMF"/>
+  </models>
+  <models xsi:type="rasppmde:Metamodel" id="W609G8Cbowc20ERfQ7D5OXOCa" name="Java 6" metaMetafacility="//@artifacts.0/@artifacts.0"/>
+  <artifacts xsi:type="rasppmde:Toolbox" id="j73aO6t5QXJgi5xs21J171isI" name="Netbeans MDR">
+    <artifacts xsi:type="rasppmde:MetamodelGenerator" id="EU89q6Cfwpn9Y6c13CSPKDel3" name="JSR 40" mtType="DSL" generator="JMI"/>
+  </artifacts>
+  <artifacts xsi:type="rasppmde:Grammar" id="60O3Nmim06q4R8g457PiL0nLM" name="Acceleo" metaMetafacility="//@artifacts.4"/>
+  <artifacts xsi:type="rasppmde:Grammar" id="IwDC0l094jLVhsiE5dS5G9Dgm" name="XTend" metaMetafacility="//@artifacts.4"/>
+  <artifacts xsi:type="rasppmde:Grammar" id="40YSfrV920eEr3nH69aUoJ0t5" name="XText" metaMetafacility="//@artifacts.4"/>
+  <artifacts xsi:type="rasppmde:ASTGenerator" id="pmO4V5c437B4A57OkLhynl099" name="XText Grammar" generator="XTextGrammar"/>
+  <artifacts xsi:type="rasppmde:ASTGenerator" id="8myMJBQWLfJi1R8uPH58t2vLm" name="Java Grammar" generator="ANTLRGrammar"/>
+  <artifacts xsi:type="rasppmde:Grammar" id="yK3v0pi9I7qo0i9FHreRNGS0y" name="ATL"/>
+  <artifacts xsi:type="rasppmde:ASTGenerator" id="GI8hV8F7ggJ6BlWj11PhD3hQ2" name="ANTLR" generator="ANTLRGrammar"/>
+  <profiles id="7hUh1Ybe2akUGxa6D1cuvCtD9" name="ReMoDD Profile"/>
+  <licenses id="a7I3qAkAkuJ44Ee0pA0ISSIQb" name="open source"/>
+</rasppmde:Repository>
