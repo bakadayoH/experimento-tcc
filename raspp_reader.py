@@ -18,7 +18,7 @@ def parseRaspp(*argv):
             repositorio.append(temp)
         
     return repositorio
-    
+
 class Asset:
     def __init__(self):
         self.name = ''

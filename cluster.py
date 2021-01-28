@@ -2,7 +2,7 @@ from raspp_reader import parseRaspp
 from raspp_similarity import assetSimilarity
 import random, sys
 
-assets = parseRaspp('remoddrepo-classification.raspp', 'mdgd2018.raspp', 'mdwe2018.raspp')
+assets = parseRaspp('ras repositories/remoddrepo-classification.raspp', 'ras repositories/mdgd2018.raspp', 'ras repositories/mdwe2018.raspp')
 n_assets = len(assets)
 k = int(sys.argv[1]) #numero de clusters
 n_iter = 0#int(sys.argv[2])
@@ -60,14 +60,8 @@ while error > 0:# and n_iter < 50):
         media_distancias = round(sum(distancias_no_cluster) / len(clusters[x]))
         asset_proximo_media = min(distancias_no_cluster, key=lambda x:abs(x-media_distancias))
         
-        ##print(distancias_no_cluster)
-        ##print(media_distancias)
-        ##print(asset_proximo_media,'\n------')
-        ##print(media_distancias,'\t',asset_proximo_media)
-        ##print(posicao_centro_cluster,'\n',media_distancias)
         if assetSimilarity(centroids[x], clusters[x][posicao_centro_cluster][0]) != next(a[1] for a in clusters[x] if a[1] == asset_proximo_media):#media_distancias:#int(clusters[x][posicao_centro_cluster][1]):
             centroids[x] = clusters[x][posicao_centro_cluster][0]
-            ##print(assetSimilarity(centroids[x], clusters[x][posicao_centro_cluster][0]), '--', next(a[1] for a in clusters[x] if a[1] == asset_proximo_media))
         else:
             erro_iter -= 1
         

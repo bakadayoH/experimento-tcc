@@ -1,5 +1,4 @@
 def assetSimilarity(assetUm, assetDois):
-    count = 0
     categoriesUm = []
     categoriesDois = []
     for dg in assetUm.classification:
