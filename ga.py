@@ -1,6 +1,6 @@
 from raspp_reader import parseRaspp
 from raspp_similarity import assetSimilarity
-import random, sys
+import random, sys, argparse
 
 def create_person(clusters):
     #cria individuo
@@ -143,11 +143,19 @@ def start_algorithm(assets, n_assets, pop_size, clusters, n_iter):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('--k', help='Número de clusters')
+    parser.add_argument('--n_iter', help='Número de iterações')
+    parser.add_argument('--pop_size', help='Número de individuos')
+    # parser.add_argument('--k', help='Número de clusters')
+    args = parser.parse_args()
+    
     assets = parseRaspp('ras repositories/remoddrepo-classification.raspp', 'ras repositories/mdgd2018.raspp', 'ras repositories/mdwe2018.raspp')
     n_assets = len(assets)
-    pop_size = 150 #int(sys.argv[3])
-    clusters = 10 #int(sys.argv[1]) #numero de clusters
-    n_iter = 1000#int(sys.argv[2])
+    pop_size = args.pop_size#150 #int(sys.argv[3])
+    clusters = args.k#10 #int(sys.argv[1]) #numero de clusters
+    n_iter = args.n_iter#1000#int(sys.argv[2])
     
     #for populacao in range(25,201,25):
     #    for n_clusters in range(5, 11):

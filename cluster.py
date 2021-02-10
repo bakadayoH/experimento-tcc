@@ -1,11 +1,20 @@
 from raspp_reader import parseRaspp
 from raspp_similarity import assetSimilarity
-import random, sys
+import random, sys, argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--k', help='Número de clusters')
+parser.add_argument('--n_iter', help='Número de iterações')
+parser.add_argument('--pop_size', help='Número de individuos')
+# parser.add_argument('--k', help='Número de clusters')
+args = parser.parse_args()
+    
 
 assets = parseRaspp('ras repositories/remoddrepo-classification.raspp', 'ras repositories/mdgd2018.raspp', 'ras repositories/mdwe2018.raspp')
 n_assets = len(assets)
-k = int(sys.argv[1]) #numero de clusters
-n_iter = 0#int(sys.argv[2])
+k = args.k#int(sys.argv[1]) #numero de clusters
+n_iter = args.n_iter#0#int(sys.argv[2])
 error = k
 centroids = [assets[x] for x in random.sample(range(0, n_assets), k)]
 
