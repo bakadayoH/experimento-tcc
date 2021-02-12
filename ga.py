@@ -120,6 +120,8 @@ def save_result(solution_position, population, n_clusters, assets, n_assets):
     
     for x in clusters:
         print(x)
+    
+    return clusters
 
 def start_algorithm(assets, n_assets, pop_size, clusters, n_iter):
     population = create_pop(pop_size, clusters)
@@ -139,7 +141,7 @@ def start_algorithm(assets, n_assets, pop_size, clusters, n_iter):
     person_position, fitness = get_best_from_pop(population,matriz_s, clusters, pop_size)
     print('best from generation',x+1,':',person_position, fitness)
 
-    save_result(person_position, population, clusters, assets, n_assets)
+    return save_result(person_position, population, clusters, assets, n_assets)
 
 
 if __name__ == '__main__':

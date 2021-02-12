@@ -6,8 +6,6 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--k', help='Número de clusters')
 parser.add_argument('--n_iter', help='Número de iterações')
-parser.add_argument('--pop_size', help='Número de individuos')
-# parser.add_argument('--k', help='Número de clusters')
 args = parser.parse_args()
     
 
