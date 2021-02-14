@@ -1,8 +1,8 @@
 from raspp_reader import parseRaspp
 from raspp_similarity import assetSimilarity
-import random, sys, argparse
+import random, sys, argparse, subprocess
 
-def create_person(clusters):
+def create_person(clusters, assets):
     #cria individuo
     person = []
     for _ in assets:
@@ -14,23 +14,23 @@ def create_person(clusters):
         person.append(asset_cluster)
     return person
 
-def create_pop(n, clusters):
+def create_pop(n, clusters, assets):
     #cria população com n individuos
     pop = []
     for _ in range(n):
-        pop.append(create_person(clusters))
+        pop.append(create_person(clusters, assets))
     return pop
 
-def create_matriz_s(assets):
+def create_matriz_s(assets, similarity_function):
     matriz_s = []
     for asset in assets:
         asset_similarity_row = []
         for _asset in assets:
-            asset_similarity_row.append(assetSimilarity(asset, _asset))
+            asset_similarity_row.append(similarity_function(asset, _asset))
         matriz_s.append(asset_similarity_row)
     return matriz_s
 
-def evaluate_person(person, matriz_s, clusters):
+def evaluate_person(person, matriz_s, clusters, n_assets):
     '''
     :return similaridade media dos clusters
     https://lume.ufrgs.br/bitstream/handle/10183/12661/000630318.pdf?sequence=1&isAllowed=y
@@ -39,11 +39,15 @@ def evaluate_person(person, matriz_s, clusters):
     similarity = 0
     for _k in range(clusters):
         soma_cluster = 0
-        p = 0
+        p = 0.0000
         for x in range(n_assets):
             p += person[x][_k] / n_assets
+            
+        try:
+            soma_cluster = 1 / (2 * p * n_assets)
+        except:
+            soma_cluster = 1
 
-        soma_cluster = 1 / (2 * p * n_assets)
         soma_elemento_x = 0
         for x in range(n_assets):
             for y in range(n_assets):
@@ -94,12 +98,12 @@ def mutate(child):
     child[mutated_gene] = new_gene
     return child
 
-def get_best_from_pop(population, matriz_s, clusters, pop_size):
+def get_best_from_pop(population, matriz_s, clusters, pop_size, n_assets):
     most_fit_person = []
     most_fit_person_fitness = 0
 
     for x in range(pop_size):
-        person_fitness = evaluate_person(population[x], matriz_s, clusters)
+        person_fitness = evaluate_person(population[x], matriz_s, clusters, n_assets)
         if most_fit_person_fitness < person_fitness: 
             most_fit_person = x
             most_fit_person_fitness = person_fitness
@@ -119,18 +123,18 @@ def save_result(solution_position, population, n_clusters, assets, n_assets):
         clusters[asset_cluster].append(assets[asset_position])
     
     for x in clusters:
-        print(x)
+        print(x,'\n\n-----------------------')
     
     return clusters
 
-def start_algorithm(assets, n_assets, pop_size, clusters, n_iter):
-    population = create_pop(pop_size, clusters)
-    matriz_s = create_matriz_s(assets)
+def start_algorithm(assets, n_assets, pop_size, clusters, n_iter, similarity_function=assetSimilarity):
+    population = create_pop(pop_size, clusters, assets)
+    matriz_s = create_matriz_s(assets, similarity_function)
     
-    print('best from first generation:',get_best_from_pop(population,matriz_s, clusters, pop_size))
+    #print('best from first generation:',get_best_from_pop(population,matriz_s, clusters, pop_size, n_assets))
 
     for x in range(n_iter):
-        peoples_fit = [evaluate_person(population[x], matriz_s, clusters) for x in range(pop_size)]
+        peoples_fit = [evaluate_person(population[x], matriz_s, clusters, n_assets) for x in range(pop_size)]
         next_generation = []
         
         for _ in range(pop_size):
@@ -138,7 +142,7 @@ def start_algorithm(assets, n_assets, pop_size, clusters, n_iter):
             for _ in range(2):
                 next_generation.append(crossover(parent1, parent2))
         population = next_generation
-    person_position, fitness = get_best_from_pop(population,matriz_s, clusters, pop_size)
+    person_position, fitness = get_best_from_pop(population,matriz_s, clusters, pop_size, n_assets)
     print('best from generation',x+1,':',person_position, fitness)
 
     return save_result(person_position, population, clusters, assets, n_assets)

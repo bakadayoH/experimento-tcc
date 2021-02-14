@@ -9,7 +9,8 @@ parser.add_argument('--n_iter', help='Número de iterações')
 args = parser.parse_args()
     
 
-assets = parseRaspp('ras repositories/remoddrepo-classification.raspp', 'ras repositories/mdgd2018.raspp', 'ras repositories/mdwe2018.raspp')
+_assets = parseRaspp('ras repositories/remoddrepo-classification.raspp', 'ras repositories/mdgd2018.raspp', 'ras repositories/mdwe2018.raspp')
+assets = [_assets[0], _assets[25], _assets[50], _assets[75], _assets[110]]*5
 n_assets = len(assets)
 k = args.k#int(sys.argv[1]) #numero de clusters
 n_iter = args.n_iter#0#int(sys.argv[2])
