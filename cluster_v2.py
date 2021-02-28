@@ -4,22 +4,34 @@ import random, sys, argparse
 
 class KMeans:
 
-    def __init__(self, assets, k=5):
+    def __init__(self, assets, k=15):
         self.assets = assets
         self.k = k
         self.n_assets = len(assets)
         self.clusters = []
-        for x in [0,1,2,3,4]:#random.sample(range(self.n_assets), self.k)
+        for x in random.sample(range(self.n_assets), self.k):
             _cluster = Cluster(x, self.assets)
             self.clusters.append(_cluster)
     
     def iniciar(self):
-        self.realocar_assets()
-        self._recalcular_centroids()
-        for c in self.clusters:
-            print(c)
+        centroids_mudaram = True
+        count = 1
+        # self._realocar_assets()
+        # mudaram = self._recalcular_centroids()
+        while centroids_mudaram:
+            count+=1
+            #print([c._posicao_centroid for c in self.clusters])
+            self._realocar_assets()
+            mudaram = self._recalcular_centroids()
+            
+            if True not in mudaram:
+                centroids_mudaram = False
+        #for c in self.clusters:
+            #print(c)
+        #print(count)
+        return self.clusters
 
-    def realocar_assets(self):
+    def _realocar_assets(self):
         for _asset in range(0,self.n_assets): #x = posicao asset na lista de assets: assets[x]
             cluster_maior_similaridade = 0 #centroid com maior similaridade com asset[x]
             maior_similaridade = 0 #maior similaridade entre os centroids e o asset[x]
@@ -27,7 +39,7 @@ class KMeans:
             is_not_centroid = True
             for _k in range(self.k): #_k = posição na lista de centroids e posicao cluster:centroids[_k], clusters[_k]
                 similaridade = self.clusters[_k].calcular_similaridade_com_centroid(_asset)
-                if True in [cluster.is_centroid(_asset) for cluster in self.clusters]: 
+                if similaridade == -1: 
                     is_not_centroid = False
                     break
                 if similaridade > maior_similaridade:
@@ -64,65 +76,66 @@ class KMeans:
             return random.choice(ainda_em_empate)
 
     def _recalcular_centroids(self):
-        centroids_mudaram = False
+        centroids_mudaram = []
         for _k in range(self.k):
-            print(self.centroids)
-            novo_centroid = self.centroids[_k] #posicao do novo asset na lista de assets
-            menor_distancia = self.clusters[_k]._calcular_media_distancia_no_cluster(_k)
-            #calcular media distancias testando todos os assets como centroids
-            for _asset in self.clusters[_k]:
-                #print('_k: {0}\nasset_candidato = {1}\nnovo_centroid = {2}'.format(_k,self.centroids[_k], _asset))
-                distancia_media = self._calcular_media_distancia_no_cluster(_k, asset_candidato=self.centroids[_k], novo_centroid = _asset)
-            #escolher o primeiro q tiver distncia media menr q o centroid atual
-                if distancia_media < menor_distancia:
-                    menor_distancia = distancia_media
-                    novo_centroid = _asset
-            #adicionar centroid atual ao cluster
-            if novo_centroid != self.centroids[_k]:
-                centroids_mudaram = True
-                self.clusters[_k].append(self.centroids[_k])
-                self.clusters[_k].remove(novo_centroid)
-            #determinar o novo centroid
-            self.centroids[_k] = novo_centroid
-        
+            mudou_centroid = self.clusters[_k].recalcular_centroid()
+            centroids_mudaram.append(mudou_centroid)
+
         return centroids_mudaram
-        
-    def iniciar_centroids(self):
-        '''
-        Faz alocação dos centroids
-        '''
-        for x in range(self.k):
-            self.clusters.append([self.centroids[x]])
 
 class Cluster():
 
     def __init__(self, centroid, assets) -> None:
-        self._elementos = []
+        self._elementos = [] #posição dos elementos na lista assets
         self.assets = assets
-        self._posicao_centroid = centroid
+        self._posicao_centroid = centroid #posicao do centroid na lista de assets
+
+    def recalcular_centroid(self):
+        centroids_mudaram = False
+        melhor_media = self.calcular_media_similaridade_no_cluster()
+        # print('mm:',melhor_media)
+        novo_centroid = self._posicao_centroid
+        #calcular media de distancia considerando cada elemento como novo possivel centroid
+        for possivel_centroid in self._elementos:
+            media_com_novo_centroid = 0
+            for elemento in self._elementos:
+                if elemento == possivel_centroid: 
+                    continue
+                media_com_novo_centroid += assetSimilarity(self.assets[elemento], self.assets[possivel_centroid]) 
+            media_com_novo_centroid += assetSimilarity(self.assets[self._posicao_centroid], self.assets[possivel_centroid]) 
+            media_com_novo_centroid /= len(self._elementos)
+            if media_com_novo_centroid > melhor_media:
+                centroids_mudaram = True
+                melhor_media = media_com_novo_centroid
+                novo_centroid = possivel_centroid
+            # print(possivel_centroid,':',media_com_novo_centroid)
+        if centroids_mudaram:
+            # print('mudaram')
+            self._elementos.remove(novo_centroid)
+            self._elementos.append(self._posicao_centroid)
+            self._posicao_centroid = novo_centroid
+
+        return centroids_mudaram
+
+    def resetar_elementos(self):
+        self._elementos = []
 
     def calcular_similaridade_com_centroid(self, posicao_asset):
         if posicao_asset == self._posicao_centroid:
             return -1
         if posicao_asset in self._elementos: #deleta a referencia ao asset[x] para evitar repetição
-            self.elementos.remove(posicao_asset)
+            self._elementos.remove(posicao_asset)
         return assetSimilarity(self.assets[posicao_asset], self.assets[self._posicao_centroid])
 
-    def calcular_media_similaridade_no_cluster(self, posicao_novo_asset, novo_centroid=None):
+    def calcular_media_similaridade_no_cluster(self, posicao_novo_asset=None):
         soma_distancias = 0
         tamanho_cluster = len(self._elementos)
         for _asset in self._elementos:
-            if novo_centroid:
-                soma_distancias += assetSimilarity(self.assets[_asset], self.assets[novo_centroid])    
-            else:
-                soma_distancias += assetSimilarity(self.assets[_asset], self.assets[self._posicao_centroid]) 
-        if posicao_novo_asset and not novo_centroid:
+            soma_distancias += assetSimilarity(self.assets[_asset], self.assets[self._posicao_centroid]) 
+        if posicao_novo_asset:
             soma_distancias += assetSimilarity(self.assets[posicao_novo_asset], self.assets[self._posicao_centroid])
-        elif posicao_novo_asset and novo_centroid:
-            soma_distancias += assetSimilarity(self.assets[posicao_novo_asset], self.assets[novo_centroid])
         if tamanho_cluster > 0:
             soma_distancias /= tamanho_cluster
-
         return soma_distancias
 
     def adicionar_ao_cluster(self, posicao_asset):
@@ -135,6 +148,12 @@ class Cluster():
         print('Centroid: ',self.assets[self._posicao_centroid])
         for elemento in self._elementos:
             print(self.assets[elemento])
+
+    def contem_elemento(self, id_elemento):
+        for elemento in self._elementos:
+            if self.assets[elemento].id == id_elemento:
+                return True
+        return False
 
     def __str__(self):
         return 'Cluster com {0} elementos. Centroid: {1}'.format(len(self._elementos), self._posicao_centroid)
@@ -149,6 +168,6 @@ if __name__ == '__main__':
     n_assets = len(assets)
     k = args.k#int(sys.argv[1]) #numero de clusters
 
-    cluster = KMeans(assets)
+    cluster = KMeans(_assets)
     cluster.iniciar()
     

@@ -122,8 +122,8 @@ def save_result(solution_position, population, n_clusters, assets, n_assets):
                 break
         clusters[asset_cluster].append(assets[asset_position])
     
-    for x in clusters:
-        print(x,'\n\n-----------------------')
+    #for x in clusters:
+    #    print(x,'\n\n-----------------------')
     
     return clusters
 
@@ -143,7 +143,7 @@ def start_algorithm(assets, n_assets, pop_size, clusters, n_iter, similarity_fun
                 next_generation.append(crossover(parent1, parent2))
         population = next_generation
     person_position, fitness = get_best_from_pop(population,matriz_s, clusters, pop_size, n_assets)
-    print('best from generation',x+1,':',person_position, fitness)
+    #print('best from generation',x+1,':',person_position, fitness)
 
     return save_result(person_position, population, clusters, assets, n_assets)
 
