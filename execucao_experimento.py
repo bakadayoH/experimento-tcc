@@ -51,7 +51,27 @@ class Experimento:
 
         media_similaridade_kmeans, media_similaridade_ga = self.calc_media_similaridade(cluster_kmeans, cluster_ga)
 
-        print(media_similaridade_kmeans, media_similaridade_ga)
+        precisao_maior_similaridade_kmeans, precisao_maior_similaridade_ga = self.calc_precisao(cluster_kmeans, cluster_ga)
+        
+        recall_maior_similaridade_kmeans, recall_maior_similaridade_ga = self.calc_recall(cluster_kmeans, cluster_ga)
+
+    def calc_precisao(self, cluster_k, cluster_ga):
+        identical = list(set(self._assets_similares) & set(cluster_k.get_assets()))
+        precisao_k =len(identical)/cluster_k.get_tamanho()
+
+        identical2 = list(set(self._assets_similares) & set(cluster_ga))
+        precisao_ga = len(identical2)/len(cluster_ga)
+
+        return precisao_k, precisao_ga
+
+    def calc_recall(self, cluster_k, cluster_ga):
+        identical = list(set(self._assets_similares) & set(cluster_k.get_assets()))
+        recall_k =len(identical)/len(self._assets_similares)
+
+        identical2 = list(set(self._assets_similares) & set(cluster_ga))
+        recall_ga = len(identical2)/len(self._assets_similares)
+
+        return recall_k, recall_ga
 
     def calc_media_similaridade(self, cluster_k, cluster_ga):
         media_sim_k = 0
@@ -64,7 +84,7 @@ class Experimento:
         
         for asset in cluster_ga:
             if asset.id == self._asset_choosen_one_id: continue
-            media_sim_k += assetSimilarity(self._asset_choosen_one, asset)
+            media_sim_ga += assetSimilarity(self._asset_choosen_one, asset)
         # media_sim_k/=len(cluster_ga)
 
         return media_sim_k, media_sim_ga

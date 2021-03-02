@@ -155,6 +155,16 @@ class Cluster():
                 return True
         return False
 
+    def get_assets(self):
+        a = []
+        for posicao in self._elementos:
+            a.append(self.assets[posicao])
+
+        return a
+
+    def get_tamanho(self):
+        return len(self._elementos)
+
     def __str__(self):
         return 'Cluster com {0} elementos. Centroid: {1}'.format(len(self._elementos), self._posicao_centroid)
 
