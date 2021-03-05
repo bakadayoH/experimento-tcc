@@ -37,39 +37,39 @@ class Experimento:
     def iniciar_experimento(self, k = 5, iteracoes = 1):
         resultados = ['k, tamanho_cluster_k, tamanho_cluster_ga, sic_k, sic_ga, precisao_k, precisao_ga, recall_k, recall_ga']#sic = similaridade intra cluster
         #todo acrescentar tamanho cluster, media_similaridade
-        for _ in range(iteracoes):
-            cluster = KMeans(self._assets, k)
-            # print('Iniciando K-Means')
-            resultado_kmeans = cluster.iniciar()
-            
-            # print('Iniciando GA')
-            resultado_ga = start_algorithm(self._assets, len(self._assets), 100, k, 100)
-
-            # print('Procurando cluster')
-            cluster_kmeans, cluster_ga = self.identificar_cluster_com_asset(self._asset_choosen_one_id, resultado_kmeans, resultado_ga)
-
-            # print(cluster_kmeans)
-            # print(len(cluster_ga))
+        for i in range(iteracoes):
             try:
+                cluster = KMeans(self._assets, k)
+                # print('Iniciando K-Means')
+                resultado_kmeans = cluster.iniciar()
+                
+                # print('Iniciando GA')
+                resultado_ga = start_algorithm(self._assets, len(self._assets), 100, k, 100)
+
+                # print('Procurando cluster')
+                cluster_kmeans, cluster_ga = self.identificar_cluster_com_asset(self._asset_choosen_one_id, resultado_kmeans, resultado_ga)
+
+                # print(cluster_kmeans)
+                # print(len(cluster_ga))
+            
                 media_similaridade_kmeans, media_similaridade_ga = self.calc_media_similaridade(cluster_kmeans, cluster_ga)
 
                 precisao_maior_similaridade_kmeans, precisao_maior_similaridade_ga = self.calc_precisao(cluster_kmeans, cluster_ga)
                 
                 recall_maior_similaridade_kmeans, recall_maior_similaridade_ga = self.calc_recall(cluster_kmeans, cluster_ga)
 
-                resultados.append('{0},{1},{2},{3},{4},{5},{6},{7},{8}'
-                .format(k, cluster_kmeans.get_tamanho(), len(cluster_ga), media_similaridade_kmeans, media_similaridade_ga,
+                resultado_iteracao = '{0},{1},{2},{3},{4},{5},{6},{7},{8}'.format(k, cluster_kmeans.get_tamanho(), len(cluster_ga), media_similaridade_kmeans, media_similaridade_ga,
                 precisao_maior_similaridade_kmeans, precisao_maior_similaridade_ga,
-                recall_maior_similaridade_kmeans, recall_maior_similaridade_ga))
-            except Exception:
+                recall_maior_similaridade_kmeans, recall_maior_similaridade_ga)
+            except Exception as e:
+                print('Erro na iteração {}: {}'.format(i,e))
                 continue
-            
-        self.salvar_resultados(resultados)
+            print('Salvando iteração',i)
+            self.salvar_resultados(resultado_iteracao)
 
     def salvar_resultados(self, resultados):
         with open('resultados.csv', 'a') as f:
-            for linha in resultados:
-                f.writelines(linha+'\n')
+            f.write(resultados+'\n')
 
     def calc_precisao(self, cluster_k, cluster_ga):
         identical = list(set(self._assets_similares) & set(cluster_k.get_assets()))
@@ -124,8 +124,8 @@ class Experimento:
 
 if '__main__' == __name__:
     experimento = Experimento()
-    for x in range(5, 16):
-        experimento.iniciar_experimento(k=x,iteracoes=100)
+    for x in range(6, 16):
+        experimento.iniciar_experimento(k=x,iteracoes=50)
 #item mais similar dentro do cluster
 # tabela:
 #kmeans/ga numero_de_clusters tamanho_cluster media_similaridade precisao_maior_similaridade recall_maior_similaridade

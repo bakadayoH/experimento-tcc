@@ -43,11 +43,8 @@ def evaluate_person(person, matriz_s, clusters, n_assets):
         for x in range(n_assets):
             p += person[x][_k] / n_assets
             
-        try:
-            soma_cluster = 1 / (2 * p * n_assets)
-        except:
-            soma_cluster = 1
-
+        soma_cluster = 1 / (2 * p * n_assets)
+        
         soma_elemento_x = 0
         for x in range(n_assets):
             for y in range(n_assets):
