@@ -35,7 +35,8 @@ class Experimento:
                 self._assets_similares.append(asset)
 
     def iniciar_experimento(self, k = 5, iteracoes = 1):
-        resultados = ['k, tamanho_cluster_k, tamanho_cluster_ga, sic_k, sic_ga, precisao_k, precisao_ga, recall_k, recall_ga']#sic = similaridade intra cluster
+        resultados_header = 'k, tamanho_cluster_k, tamanho_cluster_ga, sic_k, sic_ga, precisao_k, precisao_ga, recall_k, recall_ga'#sic = similaridade intra cluster
+        self.salvar_resultados(resultados_header)
         #todo acrescentar tamanho cluster, media_similaridade
         for i in range(iteracoes):
             try:
@@ -68,7 +69,7 @@ class Experimento:
             self.salvar_resultados(resultado_iteracao)
 
     def salvar_resultados(self, resultados):
-        with open('resultados.csv', 'a') as f:
+        with open('resultados_v3.csv', 'a') as f:
             f.write(resultados+'\n')
 
     def calc_precisao(self, cluster_k, cluster_ga):
@@ -124,8 +125,8 @@ class Experimento:
 
 if '__main__' == __name__:
     experimento = Experimento()
-    for x in range(6, 16):
-        experimento.iniciar_experimento(k=x,iteracoes=50)
+    for x in range(5, 8):
+        experimento.iniciar_experimento(k=x,iteracoes=1000)
 #item mais similar dentro do cluster
 # tabela:
 #kmeans/ga numero_de_clusters tamanho_cluster media_similaridade precisao_maior_similaridade recall_maior_similaridade
